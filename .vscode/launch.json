@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "br.edu.ifba.saj.fwads/app.App",
+            "projectName": "TrabalhoFinalPOO"
+        },
+        {
+            "type": "java",
+            "name": "Launch Principal",
+            "request": "launch",
+            "mainClass": "br.edu.ifba.saj.fwads/app.Principal",
+            "projectName": "TrabalhoFinalPOO"
+        },
+        {
+            "type": "java",
+            "name": "Launch Principal",
+            "request": "launch",
+            "mainClass": "br.edu.ifba.saj.fwads/principal.Principal",
+            "projectName": "TrabalhoFinalPOO"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
