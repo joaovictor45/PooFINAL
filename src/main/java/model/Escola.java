@@ -3,13 +3,18 @@ package model;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author João Victor
- */
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Escola {
     private String nome;
     private ArrayList<Serie> series;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     public Escola(String nome) {
         this.nome = nome;
