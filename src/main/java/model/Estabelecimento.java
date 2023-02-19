@@ -2,10 +2,7 @@ package model;
 
 import java.util.HashMap;
 
-/**
- *
- * @author João Victor
- */
+ 
 
 public class Estabelecimento {
    private String nome;
@@ -28,6 +25,9 @@ public class Estabelecimento {
     public void addItem(String nomeItem, double valor)
     {
         mapearValores.put(nomeItem, valor);
+    }
+
+    public Estabelecimento() {
     }
 
      

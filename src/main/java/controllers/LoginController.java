@@ -1,7 +1,6 @@
 package controllers;
 
 import java.net.URL;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -29,7 +28,7 @@ public class LoginController implements Initializable {
     private PasswordField lblPassword;
     @FXML
     private Button login;
-
+     
     @FXML
     private void exit() {
         System.exit(0);
@@ -39,7 +38,13 @@ public class LoginController implements Initializable {
     public static Scene sceneCadastro;
 
     @FXML
-    public void autenticar(ActionEvent event) throws SQLException, IOException {
+    public void autenticar(ActionEvent event) {
+        String email = lblUserEmail.getText();
+        String senha = lblPassword.getText();
+    }
+
+    @FXML
+    public void autenticarGoogle(ActionEvent event) {
         String email = lblUserEmail.getText();
         String senha = lblPassword.getText();
     }
@@ -50,7 +55,7 @@ public class LoginController implements Initializable {
         stageCadastro = new Stage();
         stageCadastro.initStyle(StageStyle.UNDECORATED);
         //stageCadastro.setResizable(true);
-        Parent root = FXMLLoader.load(getClass().getResource("/view/cadastro.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/cadastroUsuario.fxml"));
         sceneCadastro = new Scene(root);
         stageCadastro.setScene(sceneCadastro);
         sceneCadastro.setOnMousePressed(new EventHandler<MouseEvent>() {

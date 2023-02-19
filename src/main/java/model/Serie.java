@@ -2,11 +2,7 @@ package model;
 
 import java.util.ArrayList;
 
-
-/**
- *
- * @author João Victor
- */
+ 
 public class Serie {
     private String nome;
     public ArrayList<Item> itens;
@@ -35,6 +31,9 @@ public class Serie {
     public void addItem(Item item) {
         this.itens.add(item);
         
+    }
+
+    public Serie() {
     }
 }
  

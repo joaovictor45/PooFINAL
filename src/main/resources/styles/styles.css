@@ -1,0 +1,27 @@
+.mainFxmlClass {
+
+}
+.text-field {
+
+    -fx-border-radius: 50;
+    -fx-border-color:   #0000FF;
+    -fx-background-color:transparent;
+
+}
+.text{
+     -fx-background-color:#0000FF;
+    
+}
+.button{
+    -fx-background-radius: 50;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-background-color: #0000FF;
+
+}
+
+
+.border-pane {
+    -fx-background-color:  red;
+}
+

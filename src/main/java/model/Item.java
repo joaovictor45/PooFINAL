@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 
-/**
- *
- * @author João Victor
- */
+ 
 public class Item {
 
     private String nome, descricao;
