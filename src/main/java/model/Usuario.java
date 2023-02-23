@@ -1,16 +1,17 @@
-
 package model;
- 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
+
+//@Entity
+
 public class Usuario {
-    private String nome,email,cpf,senha;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    private String nome, email, cpf, senha;
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     public String getNome() {
@@ -45,6 +46,14 @@ public class Usuario {
         this.senha = senha;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Usuario(String nome, String email, String cpf, String senha) {
         this.nome = nome;
         this.email = email;
@@ -52,11 +61,7 @@ public class Usuario {
         this.senha = senha;
     }
 
-    
-
     public Usuario() {
     }
 
-     
-    
 }

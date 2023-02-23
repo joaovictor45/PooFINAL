@@ -1,19 +1,18 @@
-
 package model;
 
 import java.util.ArrayList;
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
+//@Entity
 public class Escola {
+
     private String nome;
     private ArrayList<Serie> series;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     public Escola(String nome) {
@@ -36,13 +35,13 @@ public class Escola {
     public ArrayList<Serie> getSeries() {
         return series;
     }
+
     public Serie getSerie(int index) {
         return series.get(index);
     }
-        
 
     public String getName() {
         return nome;
     }
-    
+
 }

@@ -1,21 +1,18 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
+//import javax.persistence.Entity;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+//import javax.persistence.Id;
 
- import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
+//@Entity
+   
 public class Item {
 
     private String nome, descricao;
     private double preco;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+   // @Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
    
     public Item() {
