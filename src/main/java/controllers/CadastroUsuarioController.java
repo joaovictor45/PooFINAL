@@ -14,6 +14,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import services.UsuarioDao;
 
 /**
  * FXML Controller class
@@ -21,7 +22,8 @@ import javafx.scene.control.TextField;
  * @author Isabel
  */
 public class CadastroUsuarioController implements Initializable {
- @FXML
+
+    @FXML
     private TextField lblUserName;
     @FXML
     private PasswordField lblPassword;
@@ -42,29 +44,32 @@ public class CadastroUsuarioController implements Initializable {
     @FXML
     public void realizarCadastro() throws SQLException {
         Alert aviso = new Alert(Alert.AlertType.INFORMATION);
-        Usuario usuario = new Usuario();
-        usuario.setNome(lblUserName.getText());
-        usuario.setCpf(lblCPF.getText());
-        usuario.setEmail(lblEmail.getText());
-        usuario.setSenha(lblPassword.getText());
-        //usuarioDao.insert(usuario);
-        aviso.setTitle("Sucesso No Cadastro");
-        aviso.setContentText("Cadastro Realizado Com Sucesso");
-        aviso.showAndWait();
+        try {
 
-         
-            aviso.setTitle("Dados inválidos");
-            aviso.setContentText("Confira seus dados\nUm ou mais já cadastrados");
+            Usuario usuario = new Usuario();
+            usuario.setNome(lblUserName.getText());
+            usuario.setCpf(lblCPF.getText());
+            usuario.setEmail(lblEmail.getText());
+            usuario.setSenha(lblPassword.getText());
+            UsuarioDao usuarioDao = new UsuarioDao();
+            usuarioDao.insert(usuario);
+            aviso.setTitle("Sucesso No Cadastro");
+            aviso.setContentText("Cadastro Realizado Com Sucesso");
             aviso.showAndWait();
-        
+        } catch (Exception e) {
+            
+        }
+
         LoginController.stageCadastro.close();
 
-    } @FXML
+    }
+
+    @FXML
     public void exit() {
-        
+
         LoginController.stageCadastro.close();
-    }}
-
-   
-    
-
+    }
+}
+//aviso.setTitle("Dados inválidos");
+         //   aviso.setContentText("Confira seus dados\nUm ou mais já cadastrados");
+           // aviso.showAndWait();

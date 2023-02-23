@@ -20,6 +20,10 @@ public class UsuarioDao {
     public Usuario selectByID(Usuario usuario) {
         return usuario;
     }
+    public boolean existeUsuario(Usuario usuario)
+    {
+        return false;
+    }
 
     public ArrayList<Usuario> selectByAll() {
 
