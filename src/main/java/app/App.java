@@ -1,5 +1,8 @@
 package app;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,10 +10,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import static javafx.application.Application.launch;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.StageStyle;
+import model.UsuarioTeste;
+import services.Service;
 
 /**
  * JavaFX App
@@ -70,7 +74,10 @@ public class App extends Application {
    }
 
     public static void main(String[] args) {
-        launch(args);
+      Service<UsuarioTeste> usuarioService = new Service<>(UsuarioTeste.class);//add
+      
+       launch(args);
     }
 
 }
+

@@ -70,6 +70,6 @@ public class CadastroUsuarioController implements Initializable {
         LoginController.stageCadastro.close();
     }
 }
-//aviso.setTitle("Dados inválidos");
-         //   aviso.setContentText("Confira seus dados\nUm ou mais já cadastrados");
+           // aviso.setTitle("Dados inválidos");
+           // aviso.setContentText("Confira seus dados\nUm ou mais já cadastrados");
            // aviso.showAndWait();

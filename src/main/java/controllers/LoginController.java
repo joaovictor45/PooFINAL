@@ -46,17 +46,13 @@ public class LoginController implements Initializable {
         String senha = lblPassword.getText();
         Usuario usuario = new Usuario(email, senha);
         UsuarioDao usuarioDao = new UsuarioDao();
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        Alert aviso = new Alert(Alert.AlertType.INFORMATION);
         boolean existe = usuarioDao.existeUsuario(usuario);
-        if(existe)
-        {
-            
-        }
+             aviso.setTitle("Tentando Logar");
+            aviso.setContentText("Tentando Logar");
+            aviso.showAndWait();
     }
-
-     
-
-    @FXML
+     @FXML
     void cadastrar() throws IOException {
 
         stageCadastro = new Stage();
@@ -88,6 +84,10 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 
-    }
+    }}
 
-}
+     
+
+   
+
+

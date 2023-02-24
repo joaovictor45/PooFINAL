@@ -6,10 +6,9 @@ import model.Usuario;
 public class UsuarioDao {
 
     public void insert(Usuario usuario) {
-
     }
 
-    public void update(Usuario usuario) {
+    public void update() {
 
     }
 
@@ -20,8 +19,8 @@ public class UsuarioDao {
     public Usuario selectByID(Usuario usuario) {
         return usuario;
     }
-    public boolean existeUsuario(Usuario usuario)
-    {
+
+    public boolean existeUsuario(Usuario usuario) {
         return false;
     }
 
