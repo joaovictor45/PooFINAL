@@ -1,5 +1,6 @@
 package controllers;
 
+import app.App;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.io.IOException;
@@ -10,7 +11,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -31,7 +31,7 @@ public class LoginController implements Initializable {
     private PasswordField lblPassword;
     @FXML
     private Button login;
-     
+
     @FXML
     private void exit() {
         System.exit(0);
@@ -41,18 +41,18 @@ public class LoginController implements Initializable {
     public static Scene sceneCadastro;
 
     @FXML
-    public void autenticar(ActionEvent event) {
+    public void autenticar(ActionEvent event) throws IOException {
         String email = lblUserEmail.getText();
         String senha = lblPassword.getText();
         Usuario usuario = new Usuario(email, senha);
         UsuarioDao usuarioDao = new UsuarioDao();
-        Alert aviso = new Alert(Alert.AlertType.INFORMATION);
         boolean existe = usuarioDao.existeUsuario(usuario);
-             aviso.setTitle("Tentando Logar");
-            aviso.setContentText("Tentando Logar");
-            aviso.showAndWait();
+
+        Parent root = FXMLLoader.load(getClass().getResource("/view/telaPrincipal.fxml"));
+        App.setRoot(root, 876, 735);
     }
-     @FXML
+
+    @FXML
     void cadastrar() throws IOException {
 
         stageCadastro = new Stage();
@@ -84,10 +84,5 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 
-    }}
-
-     
-
-   
-
-
+    }
+}

@@ -1,0 +1,62 @@
+.mainFxmlClass {
+
+}
+.text-field {
+
+    -fx-border-radius: 50;
+    -fx-border-color:   #0000FF;
+    -fx-background-color:transparent;
+
+}
+.text{
+     -fx-background-color:#0000FF;
+     -fx-fill:white;
+    
+}
+.button {
+    -fx-background-radius: 50;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-background-color: #0000FF;
+    -fx-text-fill: #0000FF;
+    -fx-cursor: hand;
+    -fx-padding: 0; /* remove o padding padrão do botão */
+}
+
+.button:hover {
+    -fx-background-color: #00FFFF;
+    -fx-text-fill: white;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:pressed {
+    -fx-background-color: #00BFFF;
+    -fx-text-fill: white;
+    -fx-transition: all 0.1s ease;
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); /* adiciona sombra ao botão */
+}
+
+.button:pressed:after {
+    -fx-background-color: rgba(0,0,0,0.2); /* cor da ondulação */
+    -fx-opacity: 0; /* define a opacidade inicial como 0 */
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:pressed:active:after {
+    -fx-opacity: 1; /* define a opacidade como 1 quando o botão é pressionado */
+    -fx-scale-x: 7; /* define a escala horizontal da ondulação */
+    -fx-scale-y: 7; /* define a escala vertical da ondulação */
+    -fx-translate_x: -50%; /* define a posição horizontal da ondulação */
+    -fx-translate_y: -50%; /* define a posição vertical da ondulação */
+}
+
+
+
+.border-pane {
+    -fx-background-color:  #0000FF;
+}
+

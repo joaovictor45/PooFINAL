@@ -19,9 +19,9 @@ public class Service<T extends AbstractEntity> {
         return repository.create(entity);
     }
 
- //  public T read(T entity) {
-  //     return repository.read(entity);        
-  //  }
+   public T read(T entity) {
+       return repository.read(entity);        
+   }
 
     public T update(T entity) {
         return repository.update(entity);

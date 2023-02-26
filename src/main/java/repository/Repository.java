@@ -36,10 +36,10 @@ public class Repository<T extends AbstractEntity> {
         return entity;
     }
 
-  //  public T read(T entity) {
-      //  EntityManager entityManager = sessionFactory.createEntityManager();
-      //  return entityManager.find(entityClass, entity.getId());
-//  }
+   public T read(T entity) {
+       EntityManager entityManager = sessionFactory.createEntityManager();
+        return entityManager.find(entityClass, entity.getId());
+  }
 
     public T update(T entity) {
         EntityManager entityManager = sessionFactory.createEntityManager();

@@ -35,4 +35,14 @@ public abstract class AbstractEntity {
         }
         return super.equals(other);
     }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+    
+    
 }

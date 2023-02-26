@@ -11,15 +11,15 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <center>
-      <AnchorPane prefHeight="609.0" prefWidth="364.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="609.0" prefWidth="364.0" stylesheets="@../styles/stylesLogin.css" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="91.0" layoutY="192.0" prefHeight="207.0" prefWidth="217.0">
+            <AnchorPane layoutX="90.0" layoutY="199.0" prefHeight="207.0" prefWidth="217.0">
                <children>
-                  <TextField id="lblUserName" fx:id="lblUserEmail" layoutX="51.0" layoutY="40.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0000FF; -fx-border-width: 0px 0px 2px;" stylesheets="@../styles/styles.css" />
-                  <PasswordField id="lblPassword" fx:id="lblPassword" layoutX="51.0" layoutY="77.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0000FF; -fx-border-width: 0px 0px 2px 0px;" stylesheets="@../styles/styles.css" />
+                  <TextField id="lblUserName" fx:id="lblUserEmail" layoutX="51.0" layoutY="40.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0000FF; -fx-border-width: 0px 0px 2px;" stylesheets="@../styles/stylesLogin.css" />
+                  <PasswordField id="lblPassword" fx:id="lblPassword" layoutX="51.0" layoutY="77.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0000FF; -fx-border-width: 0px 0px 2px 0px;" stylesheets="@../styles/stylesLogin.css" />
                   <FontAwesomeIconView fill="BLUE" glyphName="KEY" layoutX="18.0" layoutY="102.0" size="20" />
                   <FontAwesomeIconView fill="BLUE" glyphName="USER" layoutX="18.0" layoutY="65.0" size="20" />
-                  <Button id="login" fx:id="login" layoutX="82.0" layoutY="126.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="50.0" prefWidth="86.0" style="-fx-background-color: #0000FF;" stylesheets="@../styles/styles.css" text="Login" textFill="WHITE" />
+                  <Button id="login" fx:id="login" layoutX="82.0" layoutY="126.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="50.0" prefWidth="86.0" style="-fx-background-color: #0000FF;" stylesheets="@../styles/stylesLogin.css" text="Login" textFill="WHITE" />
                </children>
             </AnchorPane>
             <FontAwesomeIconView fill="BLUE" glyphName="USERS" layoutX="180.0" layoutY="173.0" size="35">
@@ -31,12 +31,12 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            <Button layoutX="361.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: transparent;">
+            <Button layoutX="347.0" mnemonicParsing="false" onAction="#exit" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: transparent;">
                <graphic>
                   <FontAwesomeIconView fill="#ff0505" glyphName="CLOSE" size="18" text="" />
                </graphic>
             </Button>
-            <Button id="login" fx:id="buttonCadastrar" layoutX="172.0" layoutY="477.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="50.0" prefWidth="92.0" style="-fx-background-color: #0000FFFF;" stylesheets="@../styles/styles.css" text="Cadastar-se" textFill="WHITE" />
+            <Button id="login" fx:id="buttonCadastrar" layoutX="172.0" layoutY="477.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="50.0" prefWidth="92.0" style="-fx-background-color: #0000FFFF;" stylesheets="@../styles/stylesLogin.css" text="Cadastar-se" textFill="WHITE" />
             <Text fill="BLUE" layoutX="121.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ainda Não Possui Uma Conta?" wrappingWidth="191.853515625">
                <font>
                   <Font size="14.0" />
