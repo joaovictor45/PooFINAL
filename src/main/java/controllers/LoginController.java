@@ -57,7 +57,6 @@ public class LoginController implements Initializable {
 
         stageCadastro = new Stage();
         stageCadastro.initStyle(StageStyle.UNDECORATED);
-        //stageCadastro.setResizable(true);
         Parent root = FXMLLoader.load(getClass().getResource("/view/cadastroUsuario.fxml"));
         sceneCadastro = new Scene(root);
         stageCadastro.setScene(sceneCadastro);
