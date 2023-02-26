@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
 package controllers;
 
 import model.Usuario;
@@ -16,11 +12,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import services.UsuarioDao;
 
-/**
- * FXML Controller class
- *
- * @author Isabel
- */
 public class CadastroUsuarioController implements Initializable {
 
     @FXML
