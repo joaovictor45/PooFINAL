@@ -98,5 +98,5 @@ public class App extends Application {
     public static void main(String[] args) {
         //Service<UsuarioTeste> usuarioService = new Service<>(UsuarioTeste.class);//add
         launch(args);
-    }
+    }                 
 }
