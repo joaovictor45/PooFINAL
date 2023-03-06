@@ -15,12 +15,12 @@
 }
 .button {
     -fx-background-radius: 50;
-    -fx-min-width: 50px;
-    -fx-min-height: 50px;
+    -fx-min-width: 25px;
+    -fx-min-height: 25px;
     -fx-background-color: #0000FF;
     -fx-text-fill: #0000FF;
     -fx-cursor: hand;
-    -fx-padding: 0; /* remove o padding padrão do botão */
+    -fx-padding: 0;  
 }
 
 .button:hover {
@@ -58,5 +58,14 @@
 
 .border-pane {
     -fx-background-color:  #0000FF;
+}
+
+.list-view{
+    -fx-background-radius: 50;
+     -fx-fill:black;
+      -fx-border-radius: 50;
+    -fx-border-color:   #0000FF;
+    -fx-background-color:transparent;
+    
 }
 

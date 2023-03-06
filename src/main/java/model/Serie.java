@@ -1,23 +1,21 @@
 package model;
 
 import java.util.ArrayList;
-//import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
-
-//@Entity
-
+ 
 public class Serie {
 
     private String nome;
     public ArrayList<Item> itens;
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     public Serie(String nome) {
         this.nome = nome;
+        this.itens = new ArrayList<>();
+    }
+
+    public Serie(String nome, Integer id) {
+        this.nome = nome;
+        this.id = id;
         this.itens = new ArrayList<>();
     }
 
@@ -27,6 +25,12 @@ public class Serie {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Serie(String nome, ArrayList<Item> itens, Integer id) {
+        this.nome = nome;
+        this.itens = itens;
+        this.id = id;
     }
 
     public ArrayList<Item> getItens() {
@@ -40,6 +44,14 @@ public class Serie {
     public void addItem(Item item) {
         this.itens.add(item);
 
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Serie() {

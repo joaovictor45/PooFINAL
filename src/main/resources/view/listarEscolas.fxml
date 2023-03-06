@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="559.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListarEscolasController">
+   <children>
+      <TableView fx:id="tableViewEscolas" layoutX="26.0" layoutY="120.0" prefHeight="421.0" prefWidth="506.0">
+        <columns>
+          <TableColumn fx:id="colunaNome" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="colunaID" prefWidth="75.0" text="ID" />
+        </columns>
+      </TableView>
+      <Text layoutX="98.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista De Escolas" wrappingWidth="362.9367218017578">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

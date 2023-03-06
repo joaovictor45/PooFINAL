@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="559.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdicionarEscolaController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdicionarEscolaController">
    <children>
-      <Text layoutX="141.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicionar Escola" wrappingWidth="318.13665771484375">
-         <font>
-            <Font size="39.0" />
-         </font>
-      </Text>
+      <AnchorPane prefHeight="662.0" prefWidth="559.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="3.0" layoutY="13.0" text="Nome da escola:" />
+            <TextField fx:id="textFildNomeEscola" layoutX="120.0" layoutY="9.0" prefHeight="27.0" prefWidth="309.0" stylesheets="@../styles/stylesPrincipal.css" />
+            <Button fx:id="buttonAddEscola" layoutX="225.0" layoutY="620.0" minHeight="27.0" mnemonicParsing="false" onAction="#salvarEscola" prefHeight="27.0" prefWidth="99.0" stylesheets="@../styles/stylesLogin.css" text="SALVAR" />
+            <Label layoutX="2.0" layoutY="46.0" text="Séries:" />
+            <ListView fx:id="tabelaSeries" layoutX="20.0" layoutY="73.0" prefHeight="174.0" prefWidth="510.0" style="-fx-border-color: #0000FF;" />
+            <Button fx:id="buttonAddItem" layoutX="430.0" layoutY="471.0" mnemonicParsing="false" onAction="#adicionarItem" prefHeight="26.0" prefWidth="88.0" stylesheets="@../styles/stylesLogin.css" text="Adicionar Item" />
+            <Label layoutX="2.0" layoutY="283.0" text="Nome da série:" />
+            <TextField fx:id="textFildNomeSerie" layoutX="104.0" layoutY="278.0" prefHeight="27.0" prefWidth="398.0" stylesheets="@../styles/stylesLogin.css" />
+            <Label layoutX="3.0" layoutY="331.0" text="Itens:" />
+            <ListView fx:id="tabelaItens" layoutX="19.0" layoutY="362.0" prefHeight="85.0" prefWidth="509.0" style="-fx-border-color: #0000FF;" />
+            <Label layoutX="2.0" layoutY="476.0" text="Nome do item:" />
+            <TextField fx:id="textFildNomeItem" layoutX="105.0" layoutY="472.0" prefHeight="27.0" prefWidth="162.0" stylesheets="@../styles/stylesLogin.css" />
+            <Label layoutX="275.0" layoutY="472.0" text="Valor do item:" />
+            <TextField fx:id="textFildValorItem" layoutX="359.0" layoutY="471.0" prefHeight="27.0" prefWidth="58.0" stylesheets="@../styles/stylesLogin.css" />
+            <Button fx:id="buttonAddSerie" layoutX="224.0" layoutY="519.0" mnemonicParsing="false" onAction="#adicionarSerie" prefHeight="26.0" prefWidth="110.0" stylesheets="@../styles/stylesLogin.css" text="Adicionar Série" />
+         </children></AnchorPane>
    </children>
-</AnchorPane>
+</Pane>

@@ -47,14 +47,12 @@ public class LoginController implements Initializable {
         Usuario usuario = new Usuario(email, senha);
         UsuarioDao usuarioDao = new UsuarioDao();
         boolean existe = usuarioDao.existeUsuario(usuario);
-
         Parent root = FXMLLoader.load(getClass().getResource("/view/telaPrincipal.fxml"));
         App.setRoot(root, 876, 735);
     }
 
     @FXML
     void cadastrar() throws IOException {
-
         stageCadastro = new Stage();
         stageCadastro.initStyle(StageStyle.UNDECORATED);
         Parent root = FXMLLoader.load(getClass().getResource("/view/cadastroUsuario.fxml"));
@@ -65,16 +63,13 @@ public class LoginController implements Initializable {
             public void handle(MouseEvent event) {
                 xOffset = event.getSceneX();
                 yOffset = event.getSceneY();
-
             }
         });
-
         sceneCadastro.setOnMouseDragged(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 stageCadastro.setX(event.getScreenX() - xOffset);
                 stageCadastro.setY(event.getScreenY() - yOffset);
-
             }
         });
         stageCadastro.show();
@@ -82,6 +77,5 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
-
     }
 }

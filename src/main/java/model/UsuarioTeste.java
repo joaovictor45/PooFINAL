@@ -48,10 +48,6 @@ public class UsuarioTeste extends AbstractEntity {
     public void setHashedPassword(String hashedPassword) {
         this.hashedPassword = hashedPassword;
     }
-    
-    
-   
-    
 
     public UsuarioTeste() {
     }
@@ -62,5 +58,4 @@ public class UsuarioTeste extends AbstractEntity {
         this.name = name;
         this.hashedPassword = hashedPassword;
     }
-
 }

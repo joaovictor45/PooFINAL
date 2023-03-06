@@ -11,14 +11,18 @@
    <children>
       <Pane layoutY="78.0" prefHeight="662.0" prefWidth="319.0" styleClass="border-pane" stylesheets="@../styles/stylesPrincipal.css">
          <children>
-            <Button layoutX="13.0" layoutY="29.0" mnemonicParsing="false" onAction="#mudarParaAdicionarEscola" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Adicionar Escola" />
-            <Button layoutX="13.0" layoutY="97.0" mnemonicParsing="false" onAction="#mudarParaAdicionarSerie" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Adicionar Série" />
-            <Button layoutX="13.0" layoutY="167.0" mnemonicParsing="false" onAction="#mudarParaAdicionarItem" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Adicionar Material" />
-            <Button layoutX="13.0" layoutY="233.0" mnemonicParsing="false" onAction="#mudarParaAdicionarLoja" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Adicionar Loja" />
-            <Button layoutX="13.0" layoutY="300.0" mnemonicParsing="false" onAction="#mudarParaAdicionarPrecos" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Adicionar Preços" />
-            <Button layoutX="13.0" layoutY="368.0" mnemonicParsing="false" onAction="#mudarParaConsultarPrecos" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Consultar Preços" />
-            <Button layoutX="15.0" layoutY="437.0" mnemonicParsing="false" onAction="#mudarParaBuscarMenorPreco" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Buscar Menor Preço" />
-            <Button layoutX="13.0" layoutY="505.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" textFill="#361f1f" />
+            <Button layoutX="11.0" layoutY="52.0" mnemonicParsing="false" onAction="#mudarParaAdicionarEscola" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Adicionar Escola" />
+            <Button layoutX="11.0" layoutY="359.0" mnemonicParsing="false" onAction="#mudarParaAdicionarLoja" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Adicionar Loja" />
+            <Button layoutX="13.0" layoutY="441.0" mnemonicParsing="false" onAction="#mudarParaConsultarPrecos" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Consultar Preços" />
+            <Button layoutX="11.0" layoutY="523.0" mnemonicParsing="false" onAction="#mudarParaBuscarMenorPreco" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Buscar Menor Preço" />
+            <Button layoutX="13.0" layoutY="127.0" mnemonicParsing="false" onAction="#mudarParaListarEscolas" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Listar Escolas" textFill="#361f1f" />
+            <Button layoutX="11.0" layoutY="204.0" mnemonicParsing="false" onAction="#mudarParaListarSeries" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Listar Series" textFill="#361f1f" />
+            <Button layoutX="13.0" layoutY="281.0" mnemonicParsing="false" onAction="#mudarParaListarItemPorSerie" prefHeight="50.0" prefWidth="294.0" stylesheets="@../styles/stylesPrincipal.css" text="Listar Itens - Série" />
+            <Text fill="WHITE" layoutX="70.0" layoutY="28.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Opções Abaixo" wrappingWidth="178.79998779296875">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <Pane layoutX="-14.0" prefHeight="78.0" prefWidth="891.0" styleClass="border-pane" stylesheets="@../styles/stylesPrincipal.css">

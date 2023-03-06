@@ -1,28 +1,29 @@
 package model;
 
-//import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
-
-//@Entity
-   
 public class Item {
 
-    private String nome, descricao;
+    private String nome, descricao, loja;
     private double preco;
-   // @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-   
+
     public Item() {
     }
 
-    public Item(String nome, String descricao, double preco) {
+    public Item(String nome, String loja, double preco) {
         this.nome = nome;
-        this.descricao = descricao;
+        this.loja = loja;
         this.preco = preco;
-       
+    }
+
+    public Item(String nome, double preco, Integer id) {
+        this.nome = nome;
+        this.preco = preco;
+        this.id = id;
+    }
+
+    public Item(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
     }
 
     public String getNome() {
@@ -37,6 +38,14 @@ public class Item {
         return descricao;
     }
 
+    public String getLoja() {
+        return loja;
+    }
+
+    public void setLoja(String loja) {
+        this.loja = loja;
+    }
+
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
@@ -49,12 +58,12 @@ public class Item {
         this.preco = preco;
     }
 
-   
+    public Integer getId() {
+        return id;
+    }
 
-     
-
-    
-
-     
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
 }

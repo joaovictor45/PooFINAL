@@ -29,14 +29,12 @@ public class CadastroUsuarioController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
     }
 
     @FXML
     public void realizarCadastro() throws SQLException {
         Alert aviso = new Alert(Alert.AlertType.INFORMATION);
         try {
-
             Usuario usuario = new Usuario();
             usuario.setNome(lblUserName.getText());
             usuario.setCpf(lblCPF.getText());
@@ -48,19 +46,12 @@ public class CadastroUsuarioController implements Initializable {
             aviso.setContentText("Cadastro Realizado Com Sucesso");
             aviso.showAndWait();
         } catch (Exception e) {
-            
         }
-
         LoginController.stageCadastro.close();
-
     }
 
     @FXML
     public void exit() {
-
         LoginController.stageCadastro.close();
     }
 }
-           // aviso.setTitle("Dados inválidos");
-           // aviso.setContentText("Confira seus dados\nUm ou mais já cadastrados");
-           // aviso.showAndWait();

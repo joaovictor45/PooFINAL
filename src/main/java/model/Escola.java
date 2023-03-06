@@ -1,22 +1,21 @@
 package model;
 
 import java.util.ArrayList;
-//import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
-//import javax.persistence.GenerationType;
-//import javax.persistence.Id;
 
-//@Entity
 public class Escola {
 
     private String nome;
     private ArrayList<Serie> series;
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    public Escola(String nome) {
+    public Escola(String nome, ArrayList<Serie> series1) {
         this.nome = nome;
+        this.series = series1;
+    }
+
+    public Escola(String nome, Integer id) {
+        this.nome = nome;
+        this.id = id;
         this.series = new ArrayList<>();
     }
 
@@ -42,6 +41,31 @@ public class Escola {
 
     public String getName() {
         return nome;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setSeries(ArrayList<Serie> series) {
+        this.series = series;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Escola(String nome) {
+        this.nome = nome;
+        this.series = new ArrayList<>();
     }
 
 }
