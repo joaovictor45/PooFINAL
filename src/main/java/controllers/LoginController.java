@@ -18,7 +18,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import model.Usuario;
-import services.UsuarioDao;
 
 public class LoginController implements Initializable {
 
@@ -45,8 +44,8 @@ public class LoginController implements Initializable {
         String email = lblUserEmail.getText();
         String senha = lblPassword.getText();
         Usuario usuario = new Usuario(email, senha);
-        UsuarioDao usuarioDao = new UsuarioDao();
-        boolean existe = usuarioDao.existeUsuario(usuario);
+//        UsuarioDao usuarioDao = new UsuarioDao();
+       // boolean existe = usuarioDao.existeUsuario(usuario);
         Parent root = FXMLLoader.load(getClass().getResource("/view/telaPrincipal.fxml"));
         App.setRoot(root, 876, 735);
     }

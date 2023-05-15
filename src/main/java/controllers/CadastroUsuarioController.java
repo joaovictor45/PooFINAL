@@ -10,7 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import services.UsuarioDao;
+//import services.UsuarioDao;
 
 public class CadastroUsuarioController implements Initializable {
 
@@ -40,8 +40,8 @@ public class CadastroUsuarioController implements Initializable {
             usuario.setCpf(lblCPF.getText());
             usuario.setEmail(lblEmail.getText());
             usuario.setSenha(lblPassword.getText());
-            UsuarioDao usuarioDao = new UsuarioDao();
-            usuarioDao.insert(usuario);
+         //   UsuarioDao usuarioDao = new UsuarioDao();
+           // usuarioDao.insert(usuario);
             aviso.setTitle("Sucesso No Cadastro");
             aviso.setContentText("Cadastro Realizado Com Sucesso");
             aviso.showAndWait();

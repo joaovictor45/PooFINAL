@@ -5,13 +5,10 @@ module app {
     requires java.sql;
     requires javafx.base;
     requires javafx.graphics;
-    requires org.hibernate.orm.core;
-    requires jakarta.persistence;
-    requires jakarta.validation;
     
    opens app to javafx.base, javafx.fxml;
    opens controllers to javafx.fxml;
-   opens model to javafx.base, javafx.fxml, org.hibernate.orm.core;   
+   opens model to javafx.base, javafx.fxml;   
    exports model;   
    exports app;
  }
